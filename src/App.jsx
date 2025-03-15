@@ -15,11 +15,16 @@ function App() {
   return(
     <div className="container">
       <div className="container-elements">
+        <header>BMI Calculator</header>
         <div className="input">
-          <input type="text" className="input-bar" placeholder="Enter your weight in kg" onChange={(e)=>{setWeight(e.target.value)}}/>
-          <input type="text" className="input-bar" placeholder="Enter your height in cm" onChange={(e)=>{setHeight(e.target.value/100)}}/>
-          <button className="submit-button" onClick={calculate}>Submit</button>
+          <div className="weight">
+            <input type="text" className="input-bar" placeholder="Enter your weight in kg" onChange={(e)=>{setWeight(e.target.value)}}/>
+          </div>
+          <div className="height">
+            <input type="text" className="input-bar" placeholder="Enter your height in cm" onChange={(e)=>{setHeight(e.target.value/100)}}/>
+          </div>
         </div>
+        <button className="submit-button" onClick={calculate}>Submit</button>
         <div className="output">
           {bmi}
         </div>
