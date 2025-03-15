@@ -9,7 +9,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: black;
+  /* background-color: #242424; */
+  background-color: wheat;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,14 +25,37 @@
 }
 
 .container-elements {
-  @apply w-full h-full p-40 grid;
-  grid-template-columns: 1fr 1fr;
+  @apply flex flex-col w-full h-full p-20 gap-5;
+}
+
+header {
+  @apply font-medium text-3xl w-full ; 
 }
 
 .input {
-  @apply flex justify-center items-center gap-5 flex-col;
+  @apply flex justify-center items-center gap-7 w-full;
+}
+
+.weight, .height {
+  @apply flex items-center justify-center w-full h-52 rounded-xl;
+  /* border: 1px solid white; */
+}
+
+.weight {
+  background-color: #E75050
+}
+
+.height {
+  background-color: #6060C7
 }
 
 .input-bar {
-  @apply w-72 h-10 p-3;
+  @apply w-72 h-10 p-3 rounded-xl;
+  background-color: #DAD9DA;
+  border: 1px white solid;
+}
+
+.submit-button {
+  @apply bg-gray-700 rounded-xl h-12 text-white text-lg font-medium;
+  letter-spacing: 1.5px;
 }
