@@ -84,5 +84,51 @@ header {
 }
 
 .category {
-  @apply text-7xl
+  @apply text-7xl flex justify-center text-center
+}
+
+@media only screen and (max-width: 400px ) {
+
+  .container {
+    @apply h-auto;
+  }
+  
+  .container-elements {
+    @apply p-10 w-full
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-28;
+    /* height: 100px; */
+  }
+
+  .input-bar {
+    @apply w-60;
+  }
+
+  .submit-button {
+    @apply w-full h-10
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-8 gap-6 h-auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-7xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-5xl flex justify-center text-center
+  }
 }
