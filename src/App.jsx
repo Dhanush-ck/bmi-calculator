@@ -5,13 +5,13 @@ function App() {
 
   const [weight, setWeight] = useState();
   const [height, setHeight] = useState();
-  const [bmi, setBMI] = useState(NaN);
+  const [bmi, setBMI] = useState();
   const [category, setCategory] = useState("Enter the details");
 
   function calculate() {
     const val = weight / (height * height);
-    setBMI(val.toFixed(1));
     if(val){
+      setBMI(val.toFixed(1));
       if(val < 18.5){
         setCategory("Underweight");
       }
@@ -28,11 +28,12 @@ function App() {
         setCategory("Obesity II");
       }
       else {
-        setCategory("Severe Obesity(Obesity III)");
+        setCategory("Severe Obesity (Obesity III)");
       }
     }
     else {
       setCategory("Enter the details")
+      setBMI();
     }
   }
 
