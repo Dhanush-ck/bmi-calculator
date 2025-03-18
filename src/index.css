@@ -132,3 +132,55 @@ header {
     @apply text-5xl flex justify-center text-center
   }
 }
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+  .container {
+    @apply h-screen;
+  }
+  
+  .container-elements {
+    @apply p-10 w-full
+  }
+
+  header {
+    @apply text-3xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-36;
+    /* height: 100px; */
+  }
+
+  .input-bar {
+    @apply w-60;
+  }
+
+  .submit-button {
+    @apply w-full h-14
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-6 gap-1 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-7xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-5xl flex justify-center text-center
+  }
+
+}
