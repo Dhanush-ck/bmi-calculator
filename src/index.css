@@ -69,7 +69,6 @@ header {
 }
 
 .submit-button div {
-  /* @apply w-full h-full; */
   rotate: 270deg;
 }
 
@@ -103,7 +102,6 @@ header {
   
   .weight, .height {
     @apply w-full h-28;
-    /* height: 100px; */
   }
 
   .input-bar {
@@ -154,7 +152,6 @@ header {
   
   .weight, .height {
     @apply w-full h-36;
-    /* height: 100px; */
   }
 
   .input-bar {
@@ -181,6 +178,59 @@ header {
 
   .category {
     @apply text-5xl flex justify-center text-center
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .container {
+    @apply h-screen;
+  }
+  
+  .container-elements {
+    @apply p-10 w-full
+  }
+
+  header {
+    @apply text-4xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-36;
+  }
+
+  .input-bar {
+    @apply w-96 h-14 text-2xl;
+  }
+
+  .submit-button {
+    @apply w-full text-3xl;
+    height: 4rem;
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-10 gap-0 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply flex justify-center items-center;
+    font-size: 6rem;
+  }
+
+  .category {
+    @apply text-7xl flex justify-center text-center
   }
 
 }
