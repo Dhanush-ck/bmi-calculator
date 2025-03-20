@@ -22,6 +22,7 @@
 
 .container {
   @apply w-screen h-screen flex justify-center items-center;
+  max-width: none;
 }
 
 .container-elements {
@@ -182,6 +183,57 @@ header {
 
 }
 
+@media only screen and (min-width: 400px) and (max-width: 600px) and (max-height: 750px) {
+
+  .container {
+    @apply h-screen gap-5;
+  }
+  
+  .container-elements {
+    @apply p-8 w-full
+  }
+
+  header {
+    @apply text-xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-28;
+  }
+
+  .input-bar {
+    @apply w-60;
+  }
+
+  .submit-button {
+    @apply w-full h-14
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-6 gap-1 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-7xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-5xl flex justify-center text-center
+  }
+
+}
+
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 
   .container {
@@ -231,6 +283,59 @@ header {
 
   .category {
     @apply text-7xl flex justify-center text-center
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .container {
+    @apply h-screen;
+  }
+  
+  .container-elements {
+    @apply p-10 w-full
+  }
+
+  header {
+    @apply text-4xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-40;
+  }
+
+  .input-bar {
+    @apply w-96 h-16 text-2xl;
+  }
+
+  .submit-button {
+    @apply w-full text-3xl;
+    height: 5rem;
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-14 gap-0 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply flex justify-center items-center;
+    font-size: 7rem;
+  }
+
+  .category {
+    @apply text-7xl flex justify-center text-center;
   }
 
 }
