@@ -87,10 +87,162 @@ header {
   @apply text-7xl flex justify-center text-center
 }
 
-@media only screen and (max-width: 400px ) {
+@media only screen and (max-width: 180px ){
 
   .container {
-    @apply h-auto;
+    @apply h-auto ;
+  }
+  
+  .container-elements {
+    @apply p-3 w-full gap-3;
+  }
+
+  header {
+    @apply text-sm;
+    letter-spacing: 0.8px;
+  }
+
+  .input {
+    @apply flex-col gap-2;
+  }
+  
+  .weight, .height {
+    @apply w-full h-14;
+  }
+
+  .input-bar {
+    @apply w-28;
+    height: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .submit-button {
+    @apply w-full h-10 text-sm
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-4 gap-2 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-4xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-xl flex justify-center text-center
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 330px ){
+
+  .container {
+    @apply h-auto ;
+  }
+  
+  .container-elements {
+    @apply p-5 w-full gap-3;
+  }
+
+  header {
+    @apply text-2xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col gap-4;
+  }
+  
+  .weight, .height {
+    @apply w-full h-24;
+  }
+
+  .input-bar {
+    @apply w-52 h-10;
+  }
+
+  .submit-button {
+    @apply w-full h-10
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-8 gap-6 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-6xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-4xl flex justify-center text-center
+  }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 400px ) and (max-height: 800px) {
+
+  .container {
+    @apply h-screen ;
+  }
+  
+  .container-elements {
+    @apply p-7 w-full gap-4;
+  }
+
+  header {
+    @apply text-2xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col gap-4;
+  }
+  
+  .weight, .height {
+    @apply w-full h-24;
+  }
+
+  .input-bar {
+    @apply w-60 h-10;
+  }
+
+  .submit-button {
+    @apply w-full h-10
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-8 gap-6 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply text-6xl flex justify-center items-center
+  }
+
+  .category {
+    @apply text-4xl flex justify-center text-center
+  }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 400px ) and (min-height: 800px) {
+
+  .container {
+    @apply h-screen;
   }
   
   .container-elements {
@@ -118,7 +270,7 @@ header {
   }
 
   .output {
-    @apply p-8 gap-6 h-auto;
+    @apply p-8 gap-6 h-full;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
@@ -311,7 +463,8 @@ header {
   }
 
   .input-bar {
-    @apply w-96 h-16 text-2xl;
+    @apply h-16 text-2xl;
+    width: 32rem;
   }
 
   .submit-button {
@@ -325,6 +478,85 @@ header {
 
   .output {
     @apply p-14 gap-0 h-full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bmi {
+    @apply flex justify-center items-center;
+    font-size: 7rem;
+  }
+
+  .category {
+    @apply text-7xl flex justify-center text-center;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) and (max-height: 600px) {
+
+  .container-elements {
+    @apply p-10 gap-4;
+  }
+
+  header {
+    @apply text-2xl
+  }
+
+  .weight, .height {
+    @apply h-40;
+  }
+
+  .bmi {
+    @apply text-8xl
+  }
+
+  .category {
+    @apply text-6xl
+  }
+  
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) and (min-height: 600px) {
+
+  .container {
+    @apply h-screen p-5;
+  }
+  
+  .container-elements {
+    @apply p-10 w-full gap-10
+  }
+
+  header {
+    @apply text-5xl;
+    letter-spacing: 1px;
+  }
+
+  .input {
+    @apply flex-col ;
+  }
+  
+  .weight, .height {
+    @apply w-full h-40;
+  }
+
+  .input-bar {
+    @apply h-16 text-2xl;
+    width: 32rem;
+  }
+
+  .submit-button {
+    @apply w-full text-3xl;
+    height: 5rem;
+  }
+
+  .submit-button div {
+    rotate: 0deg;
+  }
+
+  .output {
+    @apply p-20 gap-0 h-full;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
